@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.container > :first-child {
+  width: 320px;
+  background-color: #f0f0f0;
+}
+.container > :last-child {
+  flex: 1; /* Equal width for the first and last elements */
+  background-color: #f0f0f0;
+}
+
+.container > :nth-child(2) {
+  flex: 2; /* The second element will be twice as wide as the first and last elements */
+}

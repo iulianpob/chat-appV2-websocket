@@ -1,0 +1,73 @@
+.user_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.hover_effect:hover {
+  background-color: #d9d9d9;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user_photo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name {
+  color: #4399ff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status {
+  color: #545454;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.notification_time {
+  color: #bababa;
+  font-size: 14px;
+}
+
+.notification_number {
+  align-self: flex-end;
+  background-color: #4399ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #d9d9d9;
+  font-size: 14px;
+}
+
+.edit_button {
+  border: none;
+}
+
+.edit_button:hover {
+  cursor: pointer;
+  color: #4399ff;
+}

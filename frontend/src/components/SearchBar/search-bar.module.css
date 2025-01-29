@@ -1,0 +1,20 @@
+.search_bar {
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+}
+
+.search_bar::placeholder {
+  padding-left: 20px;
+  font-weight: 300;
+  color: #cdcdcd;
+}
+
+.search_bar:focus {
+  outline: 1px solid #4399ff;
+}
+
+.input_container {
+  padding: 0 20px;
+}
