@@ -1,0 +1,27 @@
+.footer {
+  padding: 20px;
+  background-color: #dce8ff;
+  margin: 0 -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #4399ff;
+}
+
+.footer_input {
+  width: 55%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.footer_input::placeholder {
+  color: #b0b0b0;
+}

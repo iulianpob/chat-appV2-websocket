@@ -1,13 +1,14 @@
-import userPhoto from '../../assets/user.jpg';
 import styles from './user.module.css';
 import { VscEdit } from 'react-icons/vsc';
 import clsx from 'clsx';
+import { Username } from '../Username/Username';
 
 interface IUserProps {
   contact: boolean;
+  display: 'status' | 'lastMessage';
 }
 
-export const User = ({ contact }: IUserProps) => {
+export const User = ({ contact, display }: IUserProps) => {
   return (
     <div
       className={clsx(
@@ -15,13 +16,7 @@ export const User = ({ contact }: IUserProps) => {
         contact ? '' : styles.hover_effect
       )}
     >
-      <div className={styles.user}>
-        <img className={styles.user_photo} src={userPhoto} alt="user" />
-        <div className={styles.user_info}>
-          <span className={styles.user_name}>User Name</span>
-          <span className={styles.status}>status</span>
-        </div>
-      </div>
+      <Username inDetailsView={false} photo display={display} />
       {contact ? (
         <button className={styles.edit_button}>
           <VscEdit />
