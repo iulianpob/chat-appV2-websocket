@@ -23,7 +23,7 @@ const wss = new WebSocket.Server({ server });
 wss.on("connection", (ws) => {
   console.log("A new client connected!");
 
-  // Send a welcome message to the client
+  // Send a welcome message to the clien
   ws.send("Welcome to the WebSocket server!");
 
   // Handle messages from the client
